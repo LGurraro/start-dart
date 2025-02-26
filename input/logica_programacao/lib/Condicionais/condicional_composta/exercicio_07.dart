@@ -28,10 +28,23 @@ void main() {
     return;
   }
 
-  if (media < 2) {
-    print("Chama o SAMU, $nome foi destruído(a) com média $media");
+  print('Infelizmente, $nome você está de RECUPERAÇÃO com média $media');
+
+  // TODO:  Solicitar a nota da recuperação,
+  // Se essa nota da recuperação é maior ou igual a 5.0
+  //  o programa deve mostrar a mensagem "APROVADO(A)",
+  //caso contrário deve mostrar a mensagem "REPROVADO(A)".
+
+  print('Por gentileza, informe a nota da prova de recuperação:');
+  String notaRecuperacaoLeitura = stdin.readLineSync() as String;
+  double notaRecuperacao = double.parse(notaRecuperacaoLeitura);
+
+  int mediaRecuperacaoAprovacao = 5;
+
+  if (mediaRecuperacaoAprovacao <= notaRecuperacao) {
+    print('Parabéns,$nome você foi APROVADO(A) com nota $notaRecuperacao');
     return;
   }
 
-  print('Infelizmente, $nome você está de RECUPERAÇÃO com média $media');
+  print('Infelizmente $nome você foi REPROVADO(A)');
 }
