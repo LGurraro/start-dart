@@ -14,7 +14,7 @@ void main() {
   var totalNotaAluno = 0.0;
 
   // Loop de alunos
-  for (int aluno = 0; aluno < 2; aluno++) {
+  for (int aluno = 0; aluno < 14; aluno++) {
     // Loop das notas
     for (int nota = 0; nota < 6; nota++) {
       print('Digite a ${nota + 1} nota do aluno ${aluno +1}: ');
@@ -31,7 +31,7 @@ void main() {
     totalNotaAluno = 0.0;
   }
 
-  for (int aluno = 0; aluno < 2; aluno++) {
+  for (int aluno = 0; aluno < 14; aluno++) {
     print("Aluno: ${aluno + 1}:");
     for (int nota = 0; nota < 6; nota++) {
       print('Nota prova ${nota + 1}: ${notasAlunos[aluno][nota]}');
