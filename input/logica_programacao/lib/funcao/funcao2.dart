@@ -13,7 +13,7 @@ void calcularQtdAguaDiaria(){
 
   do {
     print('Digite S se você pratica atividade fisica ou N caso não pratique');
-    praticaAtividadeFisica = stdin.readLineSync() as String;
+    praticaAtividadeFisica = (stdin.readLineSync() ?? '').toUpperCase();
   }while(praticaAtividadeFisica != 'S' && praticaAtividadeFisica != 'N');
 
   if(praticaAtividadeFisica == 'S'){
