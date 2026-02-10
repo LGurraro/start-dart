@@ -49,11 +49,13 @@ void printTotal(double valorTotal) {
 }
 
 double calcularPrecoBiscoito(int quantidade, double valorBiscoito) {
+  double valorBiscoitoCalculado = valorBiscoito;
+
   if (quantidade > 10) {
-    valorBiscoito = valorBiscoito * 0.9;
+    valorBiscoitoCalculado = valorBiscoito * 0.9;
     print(
-      'Aplicado o desconto de 10% e o valor do biscoito ficou por $valorBiscoito',
+      'Aplicado o desconto de 10% e o valor do biscoito ficou por $valorBiscoitoCalculado',
     );
   }
-  return valorBiscoito * quantidade;
+  return valorBiscoito * valorBiscoitoCalculado;
 }
